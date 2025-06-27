@@ -26,4 +26,3 @@ jobs:
         run: |
           docker build -t josafaverissimo/osrm-backend-brazil:$(date +%F) -t $IMAGE:latest .
           docker push josafaverissimo/osrm-backend-brazil:$(date +%F)
-          docker push josafaverissimo/osrm-backend-brazil:latest
