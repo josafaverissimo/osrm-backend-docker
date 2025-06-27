@@ -1,0 +1,8 @@
+services:
+  osrm-backend:
+    build:
+      context: .
+    container_name: osrm-backend
+    ports:
+      - "5000:5000"
+    command: osrm-routed --algorithm mld /data/brazil-latest
