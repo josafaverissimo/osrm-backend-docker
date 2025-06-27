@@ -24,5 +24,5 @@ jobs:
 
       - name: Build and push image
         run: |
-          docker build -t josafaverissimo/osrm-backend-brazil:$(date +%F) .
-          docker push josafaverissimo/osrm-backend-brazil:$(date +%F)
+          docker build -t josafaverissimo/osrm-backend-nordeste:$(date +%F) .
+          docker push josafaverissimo/osrm-backend-nordeste:$(date +%F)
