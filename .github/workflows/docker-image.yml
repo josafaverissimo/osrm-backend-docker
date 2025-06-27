@@ -24,8 +24,6 @@ jobs:
 
       - name: Build and push image
         run: |
-          IMAGE=josafaverissimo/osrm-backend-brazil
-          
           docker build -t $IMAGE:$TAG -t $IMAGE:latest .
-          docker push $IMAGE:$(date +%F)
-          docker push $IMAGE:latest
+          docker push josafaverissimo/osrm-backend-brazil:$(date +%F)
+          docker push josafaverissimo/osrm-backend-brazil:latest
